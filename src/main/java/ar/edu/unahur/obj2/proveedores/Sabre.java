@@ -12,7 +12,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Sabre {
-
+/* [HashSet y HashMap]----> estas clases realizan un ordenamiento interno mediante el hashcode de el elemento(Objeto), por lo cual
+no sabremos que elemento traerá. Esto nos da una ventaja para nosotros que es poder sobrescribir el metodo .hashCode() y
+.equals() para asi, si tenemos un objeto que tienen sus mismas caracteristicas y mismo hashcode no se agregue a la colección.*/
     private final Set<Vuelo> vuelos = new HashSet<Vuelo>();
 
     public Sabre() {
